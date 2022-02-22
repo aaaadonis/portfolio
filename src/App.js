@@ -27,10 +27,10 @@ const LinkWrapper = styled.div`
 
 const ImgCard = styled.img`
   margin: 5% 0;
-  width: 10%;
+  width: 100%;
   height: auto;
   @media screen and (max-width: 500px) {
-    width: 50%;
+    width: 100%;
   }
 `;
 
@@ -39,8 +39,8 @@ function App() {
     <Wrapper>
       {Data.map((obj, ind) => {
         return (
-          <a href={obj.url} target="_blank">
-            <Content>
+          <Content>
+            <a href={obj.url} target="_blank">
               <ImgCard
                 src={obj.image}
                 alt="hello"
@@ -54,14 +54,14 @@ function App() {
                     : ""
                 }
               />
-            </Content>
-          </a>
+            </a>
+          </Content>
         );
       })}
       <LinkWrapper>
         <ul>
           <li>
-            <a href="./imgs/Adonis-Edwards-Resume.pdf" download>
+            <a href="./imgs/resume-current.pdf" download>
               <i className="fa-solid fa-file"></i>
             </a>
           </li>

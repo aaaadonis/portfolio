@@ -19,14 +19,20 @@ code {
 }
 
 .heart-beat{
-  animation: heartbeat ease-in-out infinite 1s alternate; 
+  animation: heartbeat 1s ease-in-out infinite alternate; 
 }
 
 
 a{
   color: black;
   cursor: pointer;
+  margin: 5% 0;
+  width: 10%;
+  height: auto;
+
 }
+
+
 
 ul{
   list-style-type: none;
@@ -78,5 +84,11 @@ li{
   100%
   {
     transform: scale( .75 );
+  }
+}
+
+@media screen and (max-width: 500px) {
+  a{
+    width: 40%;
   }
 }

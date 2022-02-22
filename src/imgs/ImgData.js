@@ -4,6 +4,7 @@ const Images = {
   imageThree: require("./hardies.png"),
   imageFour: require("./adonis.gif"),
   imageFive: require("./heart.png"),
+  imageSix: require("./logo192.png"),
 };
 
 const Data = [
@@ -35,13 +36,20 @@ const Data = [
     isOn: false,
     url: "https://aaaadonis.github.io/adonisedwards/",
   },
-//   {
-// //     id: 5,
-// //     image: Images.imageFive,
-// //     descrip: "143",
-// //     isOn: false,
-// //     url: "https://www.143.studio",
-// //   },
+  {
+    id: 5,
+    image: Images.imageFive,
+    descrip: "143",
+    isOn: false,
+    url: "https://www.143.studio",
+  },
+  {
+    id: 6,
+    image: Images.imageSix,
+    descrip: "Ski Mask Punks NFT",
+    isOn: false,
+    url: "https://www.skimaskpunks.com",
+  },
 ];
 
 export { Images, Data };
