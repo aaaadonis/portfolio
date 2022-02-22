@@ -60,11 +60,11 @@ function App() {
       })}
       <LinkWrapper>
         <ul>
-          <li>
+          {/* <li>
             <a href="./imgs/resume-current.pdf" download>
               <i className="fa-solid fa-file"></i>
             </a>
-          </li>
+          </li> */}
 
           <li>
             <a
