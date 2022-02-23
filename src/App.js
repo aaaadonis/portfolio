@@ -27,13 +27,13 @@ const LinkWrapper = styled.div`
 const Title = styled.h1`
   width: 95vw;
   color: #0039a6;
-  font-family: "Lato";
+  font-family: "Helvetica Neue";
   font-size: 1rem;
   position: fixed;
   display: flex;
   justify-content: flex-end;
   @media screen and (max-width: 500px) {
-    font-size: 0.8rem;
+    font-size: .8rem;
   }
 `;
 
