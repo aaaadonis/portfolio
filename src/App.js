@@ -32,6 +32,9 @@ const Title = styled.h1`
   position: fixed;
   display: flex;
   justify-content: flex-end;
+  @media screen and (max-width: 500px) {
+    font-size: .8rem;
+  }
 `;
 
 const ImgCard = styled.img`
