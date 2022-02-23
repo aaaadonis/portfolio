@@ -5,7 +5,6 @@ import { Data } from "./imgs/ImgData.js";
 
 const Wrapper = styled.div`
   max-width: 100vw;
-
 `;
 
 const Content = styled.div`
@@ -25,6 +24,16 @@ const LinkWrapper = styled.div`
   flex-direction: column;
 `;
 
+const Title = styled.h1`
+  width: 95vw;
+  color: #0039a6;
+  font-family: "Helvetica Neue";
+  font-size: 1rem;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+`;
+
 const ImgCard = styled.img`
   margin: 5% 0;
   width: 100%;
@@ -37,6 +46,7 @@ const ImgCard = styled.img`
 function App() {
   return (
     <Wrapper>
+      <Title>Adonis.</Title>
       {Data.map((obj, ind) => {
         return (
           <Content>
@@ -60,11 +70,11 @@ function App() {
       })}
       <LinkWrapper>
         <ul>
-          {/* <li>
+          <li>
             <a href="./imgs/resume-current.pdf" download>
               <i className="fa-solid fa-file"></i>
             </a>
-          </li> */}
+          </li>
 
           <li>
             <a
