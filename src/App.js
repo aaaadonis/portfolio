@@ -27,13 +27,13 @@ const LinkWrapper = styled.div`
 const Title = styled.h1`
   width: 95vw;
   color: #0039a6;
-  font-family: "Helvetica Neue";
+  font-family: "Lato";
   font-size: 1rem;
   position: fixed;
   display: flex;
   justify-content: flex-end;
   @media screen and (max-width: 500px) {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 `;
 
@@ -42,6 +42,7 @@ const ImgCard = styled.img`
   width: 100%;
   height: auto;
   @media screen and (max-width: 500px) {
+    margin: 15% 0;
     width: 100%;
   }
 `;
