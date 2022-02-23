@@ -74,7 +74,10 @@ function App() {
       <LinkWrapper>
         <ul>
           <li>
-            <a href="./imgs/resume-current.pdf" download>
+            <a
+              href="https://drive.google.com/file/d/1Cza72sxvZlGentQa-Z53gS4PYTzdjCdN/view?usp=sharing"
+              target="_blank"
+            >
               <i className="fa-solid fa-file"></i>
             </a>
           </li>
