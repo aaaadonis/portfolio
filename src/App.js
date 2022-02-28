@@ -26,7 +26,7 @@ const LinkWrapper = styled.div`
 
 const Title = styled.h1`
   width: 95vw;
-  color: #ffffff;
+  color: #000000;
   font-family: kansasnew, serif;
   font-weight: 700;
   font-style: normal;
