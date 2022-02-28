@@ -5,6 +5,7 @@ const Images = {
   imageFour: require("./adonis.gif"),
   imageFive: require("./heart.png"),
   imageSix: require("./logo192.png"),
+  imageSeven: require("./mirror.png"),
 };
 
 const Data = [
@@ -24,27 +25,34 @@ const Data = [
   },
   {
     id: 3,
+    image: Images.imageSeven,
+    descrip: "Smart Mirror Final",
+    isOn: true,
+    url: "https://vimeo.com/656724782",
+  },
+  {
+    id: 4,
     image: Images.imageOne,
     descrip: "Choosing How I Live Life",
     isOn: true,
     url: "https://c-h-i-l-l.us",
   },
   {
-    id: 4,
+    id: 5,
     image: Images.imageTwo,
     descrip: "Lumia Nocito",
     isOn: false,
     url: "https://www.lumianocito.com",
   },
   {
-    id: 5,
+    id: 6,
     image: Images.imageThree,
     descrip: "Hardies",
     isOn: false,
     url: "https://www.hardieshardware.com",
   },
   {
-    id: 6,
+    id: 7,
     image: Images.imageFour,
     descrip: "Old Portfolio",
     isOn: false,
