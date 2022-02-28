@@ -26,14 +26,16 @@ const LinkWrapper = styled.div`
 
 const Title = styled.h1`
   width: 95vw;
-  color: #0039a6;
-  font-family: "Helvetica Neue";
+  color: #ffffff;
+  font-family: kansasnew, serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 1rem;
   position: fixed;
   display: flex;
   justify-content: flex-end;
   @media screen and (max-width: 500px) {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 `;
 
@@ -64,7 +66,7 @@ function App() {
                     : obj.descrip === "Old Portfolio"
                     ? "oldFolio"
                     : obj.descrip === "143"
-                    ? "heart-beat"
+                    ? "heart"
                     : ""
                 }
               />

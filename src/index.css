@@ -18,7 +18,7 @@ code {
   animation: rotate 8s infinite linear;
 }
 
-.heart-beat{
+.heart{
   animation: heartbeat 1s ease-in-out infinite alternate; 
 }
 
