@@ -92,3 +92,40 @@ li{
     width: 25%;
   }
 }
+
+.hom{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.off{
+  display: none;
+}
+
+.hov{
+    background-color: transparent;
+    color: #941c1f;
+    border: 1.8px solid #941c1f;
+    cursor: pointer;
+    transition: ease-in .2s;
+}
+
+.hov:hover{
+  background-color: #941c1f;
+  color: #ffffff;
+  transition: ease-in .2s;
+}
+
+.novis{
+  transition: opacity .2s ease-in;
+  opacity: 0;
+}
+
+.vis{
+  opacity: 1;
+  transition: opacity .2s ease-in;
+}
