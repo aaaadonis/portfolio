@@ -2,6 +2,9 @@ import React from 'react'
 import "./index.css";
 import styled from "styled-components";
 import { Data } from "./imgs/ImgData.js";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 
 const Wrapper = styled.div`
   max-width: 100vw;
@@ -49,16 +52,34 @@ const ImgCard = styled.img`
   }
 `;
 
+const Words = styled.h1`
+  text-decoration: none;
+  color: #941c1f;
+  font-size: .7rem;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  @media screen and (max-width: 500px) {
+    margin: 15% 0;
+    width: 100%;
+  }
+`;
+
 
 
 const Proj = () => {
+
+
+
   return (
     <Wrapper>
-      <Title>Adonis.</Title>
-      {Data.map((obj, ind) => {
-        return (
-          <Content key={obj.id}>
-            <a href={obj.url} target="_blank" rel="noreferrer">
+      <Link to={`/`}>
+        <Title>Adonis.</Title>
+      </Link>
+      <Content>
+        {Data.map((obj, ind) => {
+          return (
+            <a href={obj.url} key={obj.id} target="_blank" rel="noreferrer">
               <ImgCard
                 key={obj.id}
                 src={obj.image}
@@ -74,15 +95,16 @@ const Proj = () => {
                 }
               />
             </a>
-          </Content>
-        );
-      })}
+          );
+        })}
+      </Content>
       <LinkWrapper>
         <ul>
           <li>
             <a
               href="https://drive.google.com/file/d/1Cza72sxvZlGentQa-Z53gS4PYTzdjCdN/view?usp=sharing"
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >
               <i className="fa-solid fa-file"></i>
             </a>
@@ -91,14 +113,19 @@ const Proj = () => {
           <li>
             <a
               href="https://www.linkedin.com/in/adonis-edwards/"
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >
               <i className="fa-brands fa-linkedin-in"></i>
             </a>
           </li>
 
           <li>
-            <a href="https://github.com/aaaadonis" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/aaaadonis"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fa-brands fa-github"></i>
             </a>
           </li>

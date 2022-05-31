@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  overflow-x: hidden;
 }
 
 code {
@@ -29,7 +29,7 @@ a{
   margin: 5% 0;
   width: 10%;
   height: auto;
-
+  text-decoration: none;
 }
 
 
@@ -103,7 +103,23 @@ li{
 }
 
 .off{
+  opacity: 0;
   display: none;
+  transition: ease-in .2s;
+}
+
+.on{
+  opacity: 1;
+  display: initial;
+  transition: ease-in .2s;
+}
+
+.off:hover{
+  transition: ease-in .2s;
+}
+
+.on:hover{
+  transition: ease-in .2s;
 }
 
 .hov{
@@ -120,12 +136,19 @@ li{
   transition: ease-in .2s;
 }
 
-.novis{
-  transition: opacity .2s ease-in;
-  opacity: 0;
+.title{
+    color: #000000;
+    font-style: normal;
+    line-height: 35px;
+    font-size: 1.5rem;
+    margin: 2rem 5rem;
+    text-align: center;
 }
 
-.vis{
-  opacity: 1;
-  transition: opacity .2s ease-in;
+.homebut{
+    background-color: transparent;
+    padding: 10px;
+    color: #941c1f;
+    border: 1.8px solid #941c1f;
+    cursor: pointer;
 }

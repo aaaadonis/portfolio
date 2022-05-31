@@ -1,56 +1,58 @@
 import React, { useState } from "react";
 import "./index.css";
 import Typewriter from "typewriter-effect";
-import styled from "styled-components";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 
 const Home = () => {
-  const Title = styled.h1`
-    color: #000000;
-    font-style: normal;
-    line-height: 35px;
-    font-size: 1.5rem;
-    margin: 2rem 5rem;
-    text-align: center;
-    @media screen and (max-width: 500px) {
-      font-size: 0.8rem;
+
+  const textVariants = {
+    hidden: {
+      opacity: 0,
+      // y: "100vh"
+    },
+    visible: {
+      opacity: 1,
+      // y: 0,
+      transition: {
+        type: "spring",
+        delay: 3.5,
+        duration: 2
+      }
     }
-  `;
+  }
 
-  const ButtonMenu = styled.button`
-    background-color: transparent;
-    padding: 10px;
-    color: #941c1f;
-    border: 1.8px solid #941c1f;
-    cursor: pointer;
-  `;
 
-  const [visible, setVisible] = useState(false);
-
-  const handleVisible = () => {
-    setVisible(!visible);
-  };
 
   return (
     <div className="hom">
       <Typewriter
         onInit={(typewriter) => {
-          typewriter
-            .typeString("Hello, I'm Adonis!")
-            .start()
-            .callFunction(() => {
-              handleVisible();
-            });
+          typewriter.typeString("Hello, I'm Adonis!").start();
         }}
       />
-      <Title className={visible ? "vis" : "novis"}>
+      <motion.p
+        variants={textVariants}
+        initial="hidden"
+        animate="visible"
+        className="title"
+      >
         I'm a Full Stack Developer from Brooklyn, New York with a passion for
         design. Outside of tech my interests lay in Fashion and Music. When I'm
         not trying to save the world with my keyboard, I'm probably working on a
-        DJ Mix, or graphics some graphics :).
-      </Title>
-      <ButtonMenu className={visible ? "vis hov" : "novis hov"}>
-        Projects
-      </ButtonMenu>
+        DJ Mix, or designing some graphics :).
+      </motion.p>
+      <Link to={`/proj`}>
+        <motion.button
+          variants={textVariants}
+          initial="hidden"
+          animate="visible"
+          className="homebut hov"
+        >
+          Projects
+        </motion.button>
+      </Link>
     </div>
   );
 };
