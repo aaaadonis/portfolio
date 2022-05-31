@@ -15,6 +15,7 @@ const Content = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100vw;
 `;
 
 const LinkWrapper = styled.div`
@@ -30,7 +31,7 @@ const LinkWrapper = styled.div`
 const Title = styled.h1`
   width: 95vw;
   color: #000000;
-  font-family: kansasnew, serif;
+  font-family: Arial, serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
@@ -69,7 +70,25 @@ const Words = styled.h1`
 
 const Proj = () => {
 
+  const textVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    hover: {
+      opacity: 1,
+      when: "beforeChildren",
+    },
+  };
 
+  const childVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    hover:{
+      
+      opacity: 1,
+    }
+  };
 
   return (
     <Wrapper>
@@ -81,6 +100,8 @@ const Proj = () => {
           return (
             <a href={obj.url} key={obj.id} target="_blank" rel="noreferrer">
               <ImgCard
+                variants={textVariants}
+                
                 key={obj.id}
                 src={obj.image}
                 alt="hello"
@@ -94,6 +115,16 @@ const Proj = () => {
                     : ""
                 }
               />
+              <div className="wordCont">
+                <motion.p
+                  variants={childVariants}
+                  initial="hidden"
+                  whileHover="hover"
+                  className="words"
+                >
+                  {obj.words}
+                </motion.p>
+              </div>
             </a>
           );
         })}
