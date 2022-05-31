@@ -138,3 +138,8 @@ li {
   border: 1.8px solid #941c1f;
   cursor: pointer;
 }
+
+.cent{
+  display: flex;
+  justify-content: center;
+}

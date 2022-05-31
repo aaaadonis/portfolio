@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Data } from "./imgs/ImgData.js";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 
 const Wrapper = styled.div`

@@ -43,7 +43,7 @@ const Home = () => {
         not trying to save the world with my keyboard, I'm probably working on a
         DJ Mix, or designing some graphics :).
       </motion.p>
-      <Link to={`/proj`}>
+      <Link to={`/proj`} className="cent">
         <motion.button
           variants={textVariants}
           initial="hidden"
