@@ -46,6 +46,7 @@ const Title = styled.h1`
 
 const ImgCard = styled.img`
   margin: 5% auto;
+  margin-bottom: 7.5vh;
   width: 50%;
   display: flex;
   height: auto;
