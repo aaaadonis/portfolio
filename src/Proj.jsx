@@ -45,8 +45,9 @@ const Title = styled.h1`
 `;
 
 const ImgCard = styled.img`
-  margin: 5% 0;
-  width: 100%;
+  margin: 5% auto;
+  width: 50%;
+  display: flex;
   height: auto;
   @media screen and (max-width: 500px) {
     margin: 15% 0;
@@ -96,7 +97,7 @@ const Proj = () => {
       <Link to={`/`}>
         <Title>Adonis.</Title>
       </Link>
-      <Content>
+      <Content className='parent'>
         {Data.map((obj, ind) => {
           return (
             <a href={obj.url} key={obj.id} target="_blank" rel="noreferrer">
