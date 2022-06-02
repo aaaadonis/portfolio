@@ -89,19 +89,21 @@ li {
   font-size: 0.9rem;
   height: auto;
   cursor: pointer;
-  line-height: 5vh;
+  line-height: 4vh;
 }
 
 
 
 @media screen and (max-width: 500px) {
   a {
-    width: 25%;
+    width: 45%;
   }
 
   .words {
     margin: 15% 0;
     width: 100%;
+    line-height: 2.5vh;
+    opacity: 1;
   }
 }
 
@@ -149,12 +151,4 @@ li {
   display: flex;
   justify-content: center;
 }
-
-/* .parent p{
-  opacity: 0;
-}
-
-.parent:hover p{
-  opacity: 1;
-} */
 
