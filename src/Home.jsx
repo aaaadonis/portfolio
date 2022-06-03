@@ -41,7 +41,7 @@ const Home = () => {
         I'm a Full Stack Developer from Brooklyn, New York with a passion for
         design. Outside of tech my interests lay in Fashion and Music. When I'm
         not trying to save the world with my keyboard, I'm probably working on a
-        DJ Mix, or designing some graphics :).
+        DJ Mix, or designing some graphics.
       </motion.p>
       <Link to={`/proj`} className="cent">
         <motion.button
