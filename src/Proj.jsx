@@ -98,13 +98,12 @@ const Proj = () => {
       <Link to={`/`}>
         <Title>Adonis.</Title>
       </Link>
-      <Content className='parent'>
+      <Content className="parent">
         {Data.map((obj, ind) => {
           return (
             <a href={obj.url} key={obj.id} target="_blank" rel="noreferrer">
               <ImgCard
                 variants={textVariants}
-                
                 key={obj.id}
                 src={obj.image}
                 alt="hello"
@@ -136,7 +135,7 @@ const Proj = () => {
         <ul>
           <li>
             <a
-              href="https://drive.google.com/file/d/1Cza72sxvZlGentQa-Z53gS4PYTzdjCdN/view?usp=sharing"
+              href="https://drive.google.com/file/d/1os402MIfA5u6gZC7dYbXB17Qy4FOMy3D/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
